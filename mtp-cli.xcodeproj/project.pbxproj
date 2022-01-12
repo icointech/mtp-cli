@@ -64,6 +64,7 @@
 		220C07A422DC739B0058D065 /* AHSMtpPrintDevideCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHSMtpPrintDevideCmd.m; sourceTree = "<group>"; };
 		220C07A622DC873B0058D065 /* AHSMtpCreatFolderCmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHSMtpCreatFolderCmd.h; sourceTree = "<group>"; };
 		220C07A722DC873B0058D065 /* AHSMtpCreatFolderCmd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHSMtpCreatFolderCmd.m; sourceTree = "<group>"; };
+		CF25B82F278F164800386E87 /* mtp-cli.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mtp-cli.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		220C06ED22D6DA8F0058D065 /* mtp-cli */ = {
 			isa = PBXGroup;
 			children = (
+				CF25B82F278F164800386E87 /* mtp-cli.entitlements */,
 				220C079522DC2C750058D065 /* AHSLog.h */,
 				220C079622DC2C750058D065 /* AHSLog.m */,
 				220C079222DC23F30058D065 /* AHSMtpCmd.h */,
@@ -259,7 +261,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: iCoin Technology, Inc. (BBW4325A66)";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -318,7 +322,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: iCoin Technology, Inc. (BBW4325A66)";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -341,8 +347,12 @@
 		220C06F322D6DA8F0058D065 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BBH3U98L88;
+				CODE_SIGN_ENTITLEMENTS = "mtp-cli/mtp-cli.entitlements";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BBW4325A66;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -355,8 +365,12 @@
 		220C06F422D6DA8F0058D065 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BBH3U98L88;
+				CODE_SIGN_ENTITLEMENTS = "mtp-cli/mtp-cli.entitlements";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BBW4325A66;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
